@@ -1,2 +1,0 @@
-Yadira Liliana
-Quinchiguango Zumba
