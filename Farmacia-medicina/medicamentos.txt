@@ -1,3 +1,5 @@
-1,2,NI, 890900841,5,,2011,10,12,10,505000,42650
 M123  , Medicamento1  , $123.00
 M234  , Medicamento2  , $234.00
+M345  , Medicamento3  , $345.00
+M456  , Medicamento4  , $456.00
+M567  , Medicamento5  , $567.00
