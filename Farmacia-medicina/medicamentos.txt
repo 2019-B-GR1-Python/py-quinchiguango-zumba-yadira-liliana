@@ -3,3 +3,4 @@ M234  , Medicamento2  , $234.00
 M345  , Medicamento3  , $345.00
 M456  , Medicamento4  , $456.00
 M567  , Medicamento5  , $567.00
+M678  , Medicamento6  , $678
