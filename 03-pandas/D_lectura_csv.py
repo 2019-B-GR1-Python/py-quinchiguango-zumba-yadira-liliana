@@ -27,7 +27,7 @@ df4 = pd.read_csv(path)
 path_guardado = "C://Users//yadir//Documents//GitHub//py-quinchiguango-zumba-yadira-liliana//03-pandas//data//artwork_data.pickle"
 df3.to_pickle(path_guardado)
 
-path_guardado_bin = "C://Users//yadir//Documents//GitHub//py-quinchiguango-zumba-yadira-liliana//03-pandas//data//artwork_data_completo.pickle"
+path_guardado_bin = "C://Users//yadir//Documents//GitHub//py-quinchiguango-zumba-yadira-liliana//03-pandas//data//artwork_data_full.pickle"
 df4.to_pickle(path_guardado_bin)
 
 df5 = pd.read_pickle(path_guardado)
