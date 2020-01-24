@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* Formas de busqueda
+    1. ID 
+        # + nombreID
+        normalmente se utiliza los identificadores para una unica etiqueta
+    */
+    #titulo-uno{
+        background-color:bisque;
+    }
+    /* 
+    2. NOMBRE-ETIQUETA
+        Estilo mediante el nombre de la etiqueta
+    */
+    p{
+        color: white;
+        background-color: black;
+    }
+    body{
+        background-color: coral;
+    }
+    /*
+    3. Clases
+        . + nombre de la clase
+    */
+    .texto-azul{
+        color: blue;
+    }
+    .texto-amarillo{
+        color:yellow;
+    }
+    .fondo-verde{
+        background-color: green;
+    }
+    .texto-cafe{
+        color: brown;
+    }
+
+    /*
+    JERARQUIA
+        STYLE > ID > CLASE > ETIQUETA
+        si se aplica style a cada etiqueta este tendra mayor jerarquia 
+        pero es una mala practica
+
+        ultimo definido > anterior definido
+    */
+
+    /*Selectores*/
+    /* 
+    Etiqueta dentro de otra etiqueta 
+    Para dar un formato diferente a una etiqueta que esta
+    dentro de otra
+    */
+
+    body > ul> li > p {
+        background-color: thistle;
+        color: tomato;
+    }
+
+    li > p.texto-amarillo {
+        color:goldenrod;
+    }
+
+    /*Cuando no se tiene acceso a los estilos pero se puede 
+    buscar por etiquetas*/
+    p.texto-blanco.texto-azul.texto-amarillo.texto-cafe.texto-blanco{
+        color: pink !important;
+    }
+  
+    </style>
+</head>
+<body>
+
+    <h1 class="texto-amarillo">
+        Titulo
+    </h1>
+    <p id="titulo-uno" 
+       class="fondo-verde"
+       style="background-color: indigo;">
+       Mi mama
+    </p>
+    <p class="texto-blanco texto-cafe texto-azul text-amarillo">
+        me mima
+    </p>
+
+    <ul>
+        <li>
+            <p>Muy</p>
+        </li>
+        <li>
+            <p>Buenos</p>
+        </li>
+        <li>
+            <p class="texto-amarillo">Dias</p>
+        </li>
+    </ul>
+
+    <style>
+        .texto-blanco{
+            color: white;
+        }
+    </style>
+    
+</body>
+</html>
